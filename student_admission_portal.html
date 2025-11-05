@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newton College – Student Admission Portal</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      font-family: Arial, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin: 10px 20px;
+    }
+
+    form {
+      width: 400px;
+      background-color: white;
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      height: 35px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 60px;
+      resize: none;
+    }
+
+    .gender-options {
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color:darkcyan;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: navy;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Newton College – Student Admission Portal</h1>
+  <h2>Welcome to the Online Admission Form</h2>
+  <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/64956528607323070bb62108_NST%20Open%20Graph.webp" alt="College Image">
+  <p>Please fill in your details accurately to apply for admission to your preferred course.</p>
+  <hr>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact Number:</label>
+    <input type="number" id="contact" name="contact" required>
+
+    <label>Gender:</label>
+    <div class="gender-options">
+      <input type="radio" id="male" name="gender" value="Male"> Male
+      <input type="radio" id="female" name="gender" value="Female"> Female
+      <input type="radio" id="other" name="gender" value="Other"> Other
+    </div>
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course" required>
+      <option value="">Select</option>
+      <option value="B.Tech CSE">B.Tech CSE</option>
+      <option value="B.Tech CSE(AI/ML)">B.Tech CSE(AI/ML)</option>
+      <option value="B.Tech CSE (Data Science)">B.Tech CSE (Data Science)</option>
+    </select>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo">
+
+    <input type="submit" value="Submit Application">
+  </form>
+  <footer>
+    © 2025 Newton College. All rights reserved.
+  </footer>
+</body>
+</html>
