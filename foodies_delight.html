@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie’s Delight</title>
+  <style>
+    body {
+      background-color: burlywood; 
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: red;
+      font-family: 'Georgia', serif;
+      margin-top: 20px;
+    }
+
+    p {
+      color: black;
+      width: 450px;
+      margin: 10px auto;
+      line-height: 1.5;
+    }
+
+    .food-images {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    .food-item {
+      text-align: center;
+    }
+
+    .food-item img {
+      width: 250px;
+      height: 180px;
+      border: 2px solid red;
+      border-radius: 10px;
+    }
+
+    .food-item p {
+      font-weight: bold;
+      margin-top: 8px;
+      color: brown;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px 0;
+      text-decoration: none;
+      color: red;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: burlywood;
+    }
+
+    form {
+      border: 2px solid orange;
+      padding: 20px;
+      width: 300px;
+      margin: 30px auto;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    form input, form textarea {
+      width: 90%;
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    form input[type="submit"] {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <h1>Foodie’s Delight</h1>
+  <p>Welcome to Foodie’s Delight — where taste meets happiness! We serve freshly made dishes crafted with love, bringing you flavors from around the world. Dine with us for a delightful experience.</p>
+  <div class="food-images">
+    <div class="food-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCo1wUcnPZvQR4CipQru1oUeE6-oT4k7vPg&s" alt="Cheesy Pizza" >
+      <p>Cheesy Pizza</p>
+    </div>
+    <div class="food-item">
+      <img src="https://bakersway.in/cdn/shop/files/cheese-burger.png?v=1715063611" alt="Burger">
+      <p>Classic Burger</p>
+    </div>
+  </div>
+  <a href="" target="_blank">View Full Menu</a>
+  <form>
+    <h3>Contact Us</h3>
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+    <input type="submit" value="Send Message">
+  </form>
+</body>
+</html>
