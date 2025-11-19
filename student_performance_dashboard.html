@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        background-color: #f5f8ff;
+        }
+
+        h1 {
+        color: #002080;
+        text-decoration: underline;
+        margin-bottom: 5px;
+        }
+
+        h3 {
+        color: #002080;
+        margin-top: 0;
+        font-weight: 600;
+        }
+
+        table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 80%;
+        }
+
+        .main-table th, 
+        .main-table td {
+        border: 1px solid #888;
+        padding: 10px;
+        }
+
+        .main-table th {
+        background-color: #2e6da4;
+        color: white;
+        }
+
+        .dept-bg {
+        background-color: #e6f0fa;
+        }
+
+        .highlight {
+        background-color: #d9f2d9;
+        }
+
+        .extra-title {
+        background-color: #e6f0fa;
+        font-weight: bold;
+        color: #002080;
+        font-size: 1.1em;
+        padding: 10px;
+        }
+
+        .extra-section {
+        background-color: #e6f0fa;
+        padding: 15px;
+        }
+
+        /* Inner table (Extra Activities) */
+        .inner-table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 50%;
+        }
+
+        .inner-table th, 
+        .inner-table td {
+        border: 1px solid #999;
+        padding: 8px;
+        }
+
+        .inner-table th {
+        background-color: #cfe2f3;
+        }
+
+        /* Average marks section */
+        .avg {
+        background-color: #cfeef8;
+        font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">University Student Performance Dashboard</h1>
+    <h3>Department Report - 2025</h3>
+    <table class="main-table">
+    <tr>
+      <th>DEPARTMENT</th>
+      <th>STUDENT NAME</th>
+      <th>MARKS (OUT OF 100)</th>
+      <th>GRADE</th>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Computer Science</strong></td>
+      <td class="highlight"><strong>Adarsh</strong></td>
+      <td class="highlight">95</td>
+      <td class="highlight"><strong>A+</strong></td>
+    </tr>
+    <tr>
+      <td>Riya</td>
+      <td>89</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td class="highlight"><strong>Sam</strong></td>
+      <td class="highlight">92</td>
+      <td class="highlight"><strong>A+</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="dept-bg"><strong>Mechanical</strong></td>
+      <td>Aarav</td>
+      <td>85</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>Sneha</td>
+      <td>88</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="extra-title"><strong>Extra Activities</strong></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="extra-section">
+        <table class="inner-table">
+          <tr>
+            <th>Event Name</th>
+            <th>Participation Year</th>
+          </tr>
+          <tr>
+            <td>Coding Competition</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Hackathon</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Cultural Fest</td>
+            <td>2023</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="avg-bg"></td>
+      <td class="avg"><strong>89.8</strong></td>
+      <td class="avg"><strong>Average Marks</strong></td>
+    </tr>
+  </table>
+</body>
+</html>
