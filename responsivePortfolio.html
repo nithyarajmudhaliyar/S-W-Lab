@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive profile page</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: linen;
+        }
+        .hamburger{
+            width: 30px;
+            height: 5px;
+            background-color: black;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 2px solid black;
+            padding: 50px;
+            border-radius: 10px;
+            font-size: large;
+        }
+        .hero:hover{
+            box-shadow: 10px 10px 25px gray;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            background-color: lightyellow;
+        }
+        img{
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            box-shadow: 10px 10px 25px gray;
+        }
+        .skills{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 20px;
+            column-gap: 100px;
+        }
+        .gen, .fire , .susanoo{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: red;
+            font-weight: bold;
+            border: 2px solid black;
+            background-color: thistle;
+            padding: 20px;
+            font-size: large;
+            box-shadow: 10px 10px 25px gray;
+            transition: all 0.3s ease;
+        }
+        .gen:hover, .fire:hover, .susanoo:hover{
+            background-color: orange;
+            transform: scale(1.1);
+        }
+        .acheivements{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            column-gap: 100px;
+        }
+        .ach1, .ach2{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            height: 250px;
+            background-color: lightblue;
+            box-shadow: 10px 10px 25px gray;
+            transition: all 0.3s ease;
+        }
+        .ach1:hover{
+            background-color: lightsalmon;
+            transform: scale(1.1);
+        }
+        .ach2:hover{
+            background-color: lightsalmon;
+            transform: scale(1.1);
+        }
+        .button{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: blue;
+        }
+        footer{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightgray;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <header>
+        <h1>Itachi Uchiha</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/poster/k/b/k/small-itachi-uchiha-sharingan-wall-poster-redcloud-asstore-red1q-original-imahb3zmjbus6rks.jpeg?q=90" alt="itachi uchiha">
+            <p>Itachi Uchiha is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. He is a member of the Uchiha clan and is known for his exceptional skills as a ninja.</p>
+        </div>
+        <h1>Skills</h1>
+        <div class="skills">
+            <div class="gen"><p>GENJUTSU</p></div>
+            <div class="fire"><p>FIRE STYLE</p></div>
+            <div class="susanoo"><p>SUSANOO</p></div>
+        </div>
+        <h1>Acheivements</h1>
+        <div class="acheivements">
+            <section class="ach1">
+                <h3>Became ANBU Captain at Age 13</h3>
+                <p>Itachi joined the ANBU Black Ops at a very young age and rose to Captain faster than anyone in Uchiha history.</p>
+                <button class="button">View Acheivements</button>
+            </section>
+            <section class="ach2">
+                <h3>Ended the Uchiha Coup</h3>
+                <p>Itachi was able to prevent a coup d'état by his clan, which would have led to a civil war in the Hidden Leaf Village.</p>
+                <button class="button">View Acheivements</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Itachi Uchiha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
