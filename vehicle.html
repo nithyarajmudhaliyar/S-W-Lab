@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation with Sound</title>
+
+    <style>
+        .car{
+            font-size: 200px;
+            position: relative;
+            animation: moveit 2s linear infinite;
+        }
+
+        @keyframes moveit{
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: 1000px;
+            }
+        }
+
+        .flag{
+            font-size: 100px;
+            position: absolute;
+            top: 120px;
+            left: 900px;
+        }
+
+        .track{
+            width: 100%;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            top: 220px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car">🏎️</div>
+    <div class="flag">🏁</div>
+    <div class="track"></div>
+    <audio id="finishSound" src="shah-rukh-khan.mp3"></audio>
+    <script>
+        const car = document.querySelector(".car");
+        const sound = document.getElementById("finishSound");
+        car.addEventListener("animationiteration", () => {
+            sound.currentTime = 0;  // restart sound
+            sound.play();
+        });
+    </script>
+
+</body>
+</html>
+
