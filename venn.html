@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venn Diagram</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: repeat(4,1fr);
+            background-color: lightgray;
+            border: 1px solid black;
+            width: 80vh;
+            height: 80vh;
+        }
+        .item1{
+            background-color: lightcoral;
+            border: 2px solid red;
+            grid-column: 3 / 5;
+            grid-row: 2/3;
+            border-radius: 100px;
+            opacity: 0.7;
+        }
+        .item2{
+            background-color: lightseagreen;
+            border: 2px solid green;
+            grid-column: 4 / 6;
+            grid-row: 2 / 3;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+</body>
+</html>
